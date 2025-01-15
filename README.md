@@ -1,3 +1,3 @@
-# Dodge the Creeps
+# Dodge The Creeps
 
-Dodge the Creeps is a game where you have to move around in order to avoid enemies for as long as possible.
+Dodge The Creeps is a game where you have to move around in order to avoid enemies for as long as possible.
