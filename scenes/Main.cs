@@ -25,6 +25,9 @@ public partial class Main : Node
         GetNode<Timer>("ScoreTimer").Stop();
 
 		GetNode<Hud>("HUD").ShowGameOver();
+
+		GetNode<AudioStreamPlayer>("Music").Stop();
+		GetNode<AudioStreamPlayer>("DeathSound").Play();
     }
 
     // Start a new game.
@@ -43,6 +46,8 @@ public partial class Main : Node
 		hud.ShowMessage("Get Ready!");
 
 		GetTree().CallGroup("mobs", Node.MethodName.QueueFree);
+
+		GetNode<AudioStreamPlayer>("Music").Play();
     }
 
 	// Call when the mob timer timeout.
